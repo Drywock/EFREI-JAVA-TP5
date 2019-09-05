@@ -54,7 +54,7 @@ public class TestConditions {
 			}
 			else {
 				List list = new List();
-				remlpitAlea(list, n);
+				remplitAlea(list, n);
 			}
 		}
 	}
