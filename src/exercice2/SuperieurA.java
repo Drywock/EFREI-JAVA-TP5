@@ -26,7 +26,7 @@ public class SuperieurA implements Condition{
 
 	@Override
 	public String toString() {
-		return "SuperieurA [ref=" + ref + "]";
+		return "SuperieurA(" + ref + ")";
 	}
 	
 	@Override
