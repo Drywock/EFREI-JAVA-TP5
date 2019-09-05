@@ -1,10 +1,19 @@
 package exercice1;
 
+/**
+ * 
+ */
+
 import java.util.List;
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+/**
+ * 
+ * @author Thomas LINTANF
+ *
+ */
 public class TestList {
 
 	public static void main(String[] args) {
