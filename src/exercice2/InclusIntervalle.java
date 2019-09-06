@@ -4,7 +4,7 @@
 package exercice2;
 
 /**
- * @author Thomas LINTANF
+ * @author Thomas LINTANF, Gabriel RIBIER
  *
  */
 public class InclusIntervalle implements Condition{
@@ -20,13 +20,13 @@ public class InclusIntervalle implements Condition{
 
 	
 	/**
-	 * Vérifie si le nombre fournis est dans l'intervalle
-	 * @param i nombre à tester
+	 * Vï¿½rifie si le nombre fournis est dans l'intervalle
+	 * @param i nombre ï¿½ tester
 	 * @return true si i est dans l'intervalle, false sinon
 	 */
 	@Override
 	public boolean verif(int i) {
-		return ( i > inf && i <= sup);
+		return ( i >= inf && i < sup);
 	}
 
 	
@@ -72,7 +72,7 @@ public class InclusIntervalle implements Condition{
 
 	@Override
 	public String toString() {
-		return "(InclusIntervalle) [" + inf + ";" + sup + "]";
+		return "InclusIntervalle[" + inf + ";" + sup + "[";
 	}
 	
 	

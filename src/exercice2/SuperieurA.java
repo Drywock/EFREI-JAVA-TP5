@@ -4,7 +4,7 @@
 package exercice2;
 
 /**
- * @author Gabriel RIBIER
+ * @author Gabriel RIBIER, Thomas LINTANF
  *
  */
 public class SuperieurA implements Condition{

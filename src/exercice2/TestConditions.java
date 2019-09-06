@@ -3,6 +3,7 @@
  */
 package exercice2;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -38,7 +39,7 @@ public class TestConditions {
 	public static void main(String[] args) {
 		
 		if(args.length < 1) {
-			System.out.println("ERREUR 1 : Il n'y a pas d'argument");
+			System.err.println("ERREUR 1 : Il n'y a pas d'argument");
 			System.exit(1);
 		}
 		else {
@@ -47,14 +48,24 @@ public class TestConditions {
 			}
 			String arg1 = args[0];
 			
-			int n = java.lang.Integer.parseInt(arg1);
-			
-			if(n == null) {
-				System.out.println("ERREUR 2 : Il n'y a pas d'entier correct dans le premier argument");
+			int n = 0;
+			try{
+				n = java.lang.Integer.parseInt(arg1);
 			}
-			else {
-				List list = new List();
-				remplitAlea(list, n);
+			catch(NumberFormatException e) {
+				System.err.println("ERREUR 2 : L'argument n'est pas un nombre");
+				System.exit(1);
+			}
+			
+			List list = new ArrayList();
+			remplitAlea(list, n);
+			Pair test1 = new Pair();
+			SuperieurA test2 = new SuperieurA(25);
+			InclusIntervalle test3 = new InclusIntervalle(10,35);
+			Condition[] conditions = {test1, test2, test3};
+			for(Condition condition : conditions) {
+				int vrai = compte(list, condition, true);
+				System.out.println(condition + ": " + vrai + "V+" + (n-vrai) + "F");
 			}
 		}
 	}
