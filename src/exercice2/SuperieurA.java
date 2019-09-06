@@ -4,7 +4,7 @@
 package exercice2;
 
 /**
- * @author Gabriel RIBIER
+ * @author Gabriel RIBIER, Thomas LINTANF
  *
  */
 public class SuperieurA implements Condition{
@@ -26,7 +26,7 @@ public class SuperieurA implements Condition{
 
 	@Override
 	public String toString() {
-		return "SuperieurA [ref=" + ref + "]";
+		return "SuperieurA(" + ref + ")";
 	}
 	
 	@Override

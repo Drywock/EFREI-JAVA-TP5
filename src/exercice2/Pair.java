@@ -4,7 +4,7 @@
 package exercice2;
 
 /**
- * @author Thomas LINTANF
+ * @author Thomas LINTANF, Gabriel RIBIER
  *
  */
 public class Pair implements Condition {
@@ -14,8 +14,8 @@ public class Pair implements Condition {
 	
 	
 	/**
-	 * Test la parité
-	 * @param i le nombre à tester
+	 * Test la paritï¿½
+	 * @param i le nombre ï¿½ tester
 	 * @return true si i est pair, false sinon
 	 */
 	@Override
@@ -25,7 +25,7 @@ public class Pair implements Condition {
 
 	@Override
 	public String toString() {
-		return "(Pair)";
+		return "Pair";
 	}
 	
 	
