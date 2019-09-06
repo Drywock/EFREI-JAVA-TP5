@@ -8,11 +8,16 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @author Gabriel RIBIER
+ * @author Gabriel RIBIER, Thomas LINTANF
  *
  */
 public class TestConditions {
 	
+	/**
+	 * Remplit une liste avec n entiers aleatoires
+	 * @param list liste a remplir
+	 * @param n nombre d'entier a mettre
+	 */
 	public static void remplitAlea(List list, int n) {
 		
 		Random rnd = new Random();
@@ -23,6 +28,13 @@ public class TestConditions {
 		
 	}
 	
+	/**
+	 * Compte le nombre de fois ou la condition est dans l'etat attendue
+	 * @param list liste a tester
+	 * @param test condition a tester
+	 * @param bool resultat attendu du test
+	 * @return nombre de fois ou on obtient le resultat attendu
+	 */
 	public static int compte(List list, Condition test, boolean bool) {
 		
 		int cpt = 0;
